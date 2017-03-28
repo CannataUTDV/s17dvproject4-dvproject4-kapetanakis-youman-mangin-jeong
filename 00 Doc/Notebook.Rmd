@@ -1,0 +1,31 @@
+---
+title: "Project 4"
+author: "<center><b>Carson Youman, Ryan Allen Mangin, Seongwoo Jeong, & Stefanos Kapetanakis</b></center>"
+output:
+  html_document:
+    toc: yes
+  html_notebook:
+    toc: yes
+---
+
+```{r sessionInfo}
+sessionInfo(package=NULL)
+```
+
+#**Cleaning the Data**
+We cleaned our data using the R script we created named AustinHousingETL.R in the 01 Data folder. This script creates a csv file named Austin_Housing_Data.csv. We then uploaded this cleaned data to data.world. 
+
+```{r source, include=FALSE}
+source("../01 Data/AustinHousingETL.R")
+```
+#**Getting the Data**
+The data for this project can be found and accessed at https://data.world/stefkaps/s-17-edv-project-4 assuming proper permissions. If you do not have permission but wish to gain it, message the user at the following URL: https://data.world/stefkaps
+
+#**2014 Housing Market Analysis**
+We downloaded the 2014 Housing Market Data for the City of Austin from the data.gov website. This data is broken down by zip code and lists a variety of statistics associated with the zip code. Using this data, we created three visualizations of the data showing the following relationships:<br /><br />
+<ol>
+<li></li>
+<li></li>
+<li></li>
+
+</ol>
