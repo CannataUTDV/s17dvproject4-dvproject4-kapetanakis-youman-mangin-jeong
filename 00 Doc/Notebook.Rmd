@@ -15,17 +15,25 @@ sessionInfo(package=NULL)
 #**Cleaning the Data**
 We cleaned our data using the R script we created named AustinHousingETL.R in the 01 Data folder. This script creates a csv file named Austin_Housing_Data.csv. We then uploaded this cleaned data to data.world. 
 
-```{r source, include=FALSE}
-source("../01 Data/AustinHousingETL.R")
-```
 #**Getting the Data**
 The data for this project can be found and accessed at https://data.world/stefkaps/s-17-edv-project-4 assuming proper permissions. If you do not have permission but wish to gain it, message the user at the following URL: https://data.world/stefkaps
 
 #**2014 Housing Market Analysis**
-We downloaded the 2014 Housing Market Data for the City of Austin from the data.gov website. This data is broken down by zip code and lists a variety of statistics associated with the zip code. Using this data, we created three visualizations of the data showing the following relationships:<br /><br />
-<ol>
-<li></li>
-<li></li>
-<li></li>
+We downloaded the 2014 Housing Market Data for the City of Austin from the data.gov website. This data is broken down by zip code and lists a variety of statistics associated with the zip code. Using this data, we created the following relationships
 
-</ol>
+#**Number of Housing Units vs. Rent**
+This visualization contains many different important metrics concerning housing in Austin.  On the left we see a map of Austin, with each circle representing a zip code. The size of the circle represents the median home value while the color represents the percentage of Hispanic or Latino residents. As you can see, most of the largest circles are colored red/orange, signifying that there is a low Hispanic population. On the right we can see the percentage change in the number of housing units from 2000-2012 by zip code. The color of the bars represents the change in median home value throughout this same period. With this visualization we can see where new high value homes are being built. As one would expect with the large influx of residents into the Austin area, home values have risen nearly across the board. Selecting a zip code on either visualization will highlight its counterpart on the adjacent graph, allowing for easy investigation and comparison. Combining the geographical data on a map paints a more vivid picture of where certain trends are occurring. 
+<img src="../03 Visualizations/pic1.png" alt="">
+
+#**Median Home Value by Zip Code**
+This visualization shows the median home value by zip code. From this visualization we were able to find that the highest median home values were in the North Austin area and the lowesy median home values were in the East Austin area. After finding this data, we decided to look at the demographics of this area.
+<img src="../03 Visualizations/pic2.png" alt="">
+
+#**Median Rent vs. Median home value by Demographic**
+This visualization is pretty interesting and reveals some insight about the housing market in the Austin area. The first thing to note here is the map of Austin on the left. This map shows the percentage of Hispanic people per zip code and the darker shade of blue the zip code is, the greater the Hispanic population is there. This shows Austin's huge Hispanic population, percentage wise, and also note how there is a much greater amount in the southeastern area than anywhere else. The chart on the left shows the change in median rent by zip code from 2000-2012 using the bars. The color scheme on this chart shows the change of the median home value from 2000-2012, rather than the rent. One of the main points this chart shows is that the median rent and median home value have increased a lot in areas that are closer to the center of Austin, while areas farther away still have increased a big amount. The most interesting part of this chart is when looking at the zip code 78742, which is the only one that has a negative change in median home value yet the median rent has still nearly increased almost 20%. That area is also one with a huge Hispanic population and is right in the center of the cluster of dark blue zip codes on the map in the left.
+<img src="../03 Visualizations/pic3.png" alt="">
+
+#**Household Income vs. Population Below Poverty Line**
+This visualization shows the downward trend between household income and the percent of the population below poverty line. We were surprised to find that this was an exponential relationship and that the decrease was so dramatic from 10% to 20%. It was also disturbing to find that the majority of the areas with high percentage of people below the poverty line were predominantly Hispanic. In fact, the areas with the largest amount of Hispanics also had the greatest amount of people below the poverty line. This visualization was created using shiny and may be accessed here: https://ryanmangin.shinyapps.io/proj4/
+<img src="../03 Visualizations/pic4.png" alt="">
+
